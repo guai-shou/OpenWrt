@@ -51,4 +51,8 @@ jobs:
       run: |
         echo $GITHUB_WORKSPACE
         ls -l
-        [ -e $CONFIG_FILE ] && echo $0
+        echo $CONFIG_FILE
+        [ -e $CONFIG_FILE ]
+        echo $?
+
+
