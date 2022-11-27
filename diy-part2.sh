@@ -17,7 +17,7 @@ sed -i 11s/'eth0'/'eth1'/ package/base-files/files/etc/board.d/99-default_networ
 sed -i 12s/\'eth1\'/\'eth0\'/ package/base-files/files/etc/board.d/99-default_network
 
 # 修改默认IP
-sed -i 's/192.168.1.1/10.10.10.1/g'package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 
 # 删除默认密码
 sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
