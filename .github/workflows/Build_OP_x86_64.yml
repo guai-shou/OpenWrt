@@ -49,6 +49,9 @@ jobs:
 
     - name: Check server performance
       run: |
+        echo "test"
         [ -e CONFIG_FILE ] && echo $?
+        [ -e CONFIG_FILE ]
+        echo $?
         pwd
         ls
